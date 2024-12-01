@@ -5,6 +5,7 @@ const Hocr = (Wraper)=>{
         return(
             <div style={{backgroundColor:"green"}}>
                 <Wraper/>
+                <h1>hgsd</h1>
             </div>
         )
     }
