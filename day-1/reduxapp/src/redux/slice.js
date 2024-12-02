@@ -1,16 +1,17 @@
-import {createSlice} from "@reduxjs/toolkit"
+import {createSlice} from '@reduxjs/toolkit'
 
-const conterslice = createSlice({
-    name:'coun',
-    initialState:{
-        value:0,
-    },
-    reducers:{
-        incriment:((state,action)=>{
-            state.value+=1
-        }),
-    }
-}) 
+const postslice = createSlice({
+    name:'counters',
+    initialState:{count:0},
+        
+        reducers:{
+            incrimenting:((state,action)=>{
+                state.count+=1
+            }),
+        },
 
-export const {incriment} = conterslice.actions;
-export default conterslice.reducer;
+        
+
+})
+export const {incrimenting}=postslice.actions;
+export default postslice.reducer;
