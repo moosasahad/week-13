@@ -14,8 +14,8 @@ function App() {
      <h1>hallow</h1>
      {/* <Hoccom/>
      <Display/> */}
-     {/* <Signup/> */}
-     <Page/>
+     <Signup/>
+     {/* <Page/> */}
 
     </div>
   );

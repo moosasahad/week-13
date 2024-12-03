@@ -4,7 +4,7 @@ import { validation } from './Schema';
 
 function Signup() {
 
-    const {values,errors,handleChange,handleSubmit,handleBlur,touched} =useFormik({
+    const {values,errors,touched,handleChange,handleSubmit,handleBlur} =useFormik({
         initialValues:{
             name:"",
             email:"",
@@ -73,7 +73,7 @@ function Signup() {
              name='cpassword'
              placeholder='cpassword....'
               />
-              <p>{errors.cpassword}</p>
+             <p>{errors.cpassword && touched.cpassword ?errors.cpassword:null}</p>
         </div>
         <button>submit</button>
       </form>
